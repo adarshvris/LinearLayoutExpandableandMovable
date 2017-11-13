@@ -28,8 +28,8 @@ public class ThreeItemsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         /*This app requires draw app over permission for Android K and below
-        it will automatically give permission but from Android M we need to explicitly give permission*/
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        it will automatically give permission but from Android L we need to explicitly give permission*/
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.L)
         {
             if (!Settings.canDrawOverlays(this)) {
                 Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName()));
