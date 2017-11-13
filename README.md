@@ -18,7 +18,7 @@ Note: Till kitkat version, the permission will be internally granted but from lo
 
 <b>From lollipop onwards you have to add the following code to grant the permission:</b>
 
-if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.L)
         {
             if (!Settings.canDrawOverlays(this)) {
                 Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName()));
