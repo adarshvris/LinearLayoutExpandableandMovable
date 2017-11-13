@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <!--Root container-->
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        tools:ignore="UselessParent">
+
+        <!--View while view is expanded on left-->
+        <LinearLayout
+            android:id="@+id/expanded_container_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+        </LinearLayout>
+
+        <!--View while view is collapsed-->
+
+            <RelativeLayout
+                android:id="@+id/collapse_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/expanded_container_left"
+                android:visibility="visible"
+                android:clipChildren="false">
+            <!--Icon of floating widget -->
+            <ImageView
+                android:id="@+id/collapsed_iv"
+                android:layout_width="34dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/tray_icon_facing_right_for_mobile"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/collapsed_iv_animate"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9.5dp"
+                android:background="@drawable/glow_image"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/collapsed_iv_animate_left"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9.5dp"
+                android:background="@drawable/glow_image"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"/>
+
+            </RelativeLayout>
+
+        <!--View while view is expanded on right-->
+        <LinearLayout
+            android:id="@+id/expanded_container_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/collapse_view"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

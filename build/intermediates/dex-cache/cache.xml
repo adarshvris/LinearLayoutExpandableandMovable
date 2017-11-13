@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Libraries Android\TrayViewWithItems\traylibrary\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a7ad671e1349b2c4a731ab5bdc6560fd624bbbd">
+        <dex dex="E:\Libraries Android\TrayViewWithItems\app\build\intermediates\pre-dexed\debug\classes_9b3ac0a53aea92c5403993e555c46aa8893ee826.jar" />
+    </item>
+
+</items>

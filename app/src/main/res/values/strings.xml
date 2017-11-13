@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TrayViewWithItems</string>
+
+    <string-array name="tray_three_elements_items">
+        <item>status</item>
+        <item>icon</item>
+        <item>edit</item>
+        <item>floor</item>
+    </string-array>
+
+    <string-array name="tray_three_elements_icons">
+        <item>@drawable/status</item>
+        <item>@drawable/normal</item>
+        <item>@drawable/edit</item>
+        <item>@drawable/swap</item>
+    </string-array>
+
+    <string-array name="tray_two_elements_items">
+        <item>edit</item>
+        <item>image</item>
+    </string-array>
+
+    <string-array name="tray_two_elements_icons">
+        <item>@drawable/edit</item>
+        <item>@drawable/swap</item>
+    </string-array>
+
+</resources>

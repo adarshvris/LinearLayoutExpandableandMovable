@@ -1,0 +1,63 @@
+<!--
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:topLeftRadius="10dp"
+        android:bottomLeftRadius="10dp"/>
+
+    <solid
+        android:color="#000"/>
+    <size
+        android:width="35dp"
+        android:height="35dp"/>
+</shape>-->
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <padding android:left="4dp" />
+            <solid android:color="@android:color/transparent" />
+            <size
+                android:width="40dp"
+                android:height="34dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+
+            <corners
+                android:bottomLeftRadius="12dp"
+                android:topLeftRadius="12dp" />
+
+            <solid android:color="#cc000000" />
+            <size
+                android:width="34dp"
+                android:height="34dp" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="15dp"
+        android:gravity="center_horizontal"
+        android:left="11dp"
+        android:right="9dp"
+        android:top="15dp">
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+
+            <solid android:color="#ffffff" />
+            <!--<size
+                android:width="5dp"
+                android:height="5dp"/>-->
+        </shape>
+    </item>
+
+</layer-list>

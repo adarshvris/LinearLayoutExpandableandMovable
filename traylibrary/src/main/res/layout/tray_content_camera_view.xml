@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/statusView"
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:paddingBottom="2dp"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/edit_image"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp" />
+
+        <com.example.traylibrary.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_image"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:id="@+id/edit_text"
+            android:textSize="9sp" />
+    </RelativeLayout>
+</merge>
