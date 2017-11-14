@@ -26,7 +26,7 @@ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.L)
             }
         }
         
-This will redirect you to <b>"system/draw over other apps"</b>
+This will redirect you to <b>"settings/draw over other apps"</b>
 
 # License
 
